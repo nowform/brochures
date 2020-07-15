@@ -30,6 +30,11 @@ html{
 <link rel="stylesheet" href="style/style.css" />
 <link rel="stylesheet" href="style/player.css" />
 <script src="javascript/jquery-1.9.1.min.js"></script>
+<style>
+	.hide-audio{
+		position: absolute;left: -100%;
+	}
+</style>
 </head>	
 <body>
 	<script src="javascript/config.js"></script>
@@ -53,9 +58,20 @@ html{
 	<script src="javascript/FlipBookPlugins.min.js"></script>
 	<link rel="stylesheet" href="style/FlipBookPlugins.min.css" />
 	<script src="slide_javascript/slideJS.js"></script>
-	<audio autoplay loop>
-		<source src="./files/music.mp3" type="audio/mpeg">
+	<audio autoplay loop controls class="hide-audio" >
+		<source src="./files/music.mp3" type="audio/mpeg" id="audio-back">
 	  Your browser does not support the audio element.
-	  </audio>
+	</audio>
+	<script>
+		(function(){
+			console.log('i ran');
+			var x = document.getElementById("audio-back");
+			console.log(x);
+			setTimeout(() => {
+				x.autoplay;
+			}, 1000);
+		}())
+
+	</script>
 </body>
 </html>
