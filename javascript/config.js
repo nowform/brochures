@@ -1,5 +1,5 @@
 var bookConfig = {
-    "FlipSound":"NO",
+    "FlipSound":"Yes",
     "QRCode":"Hide",
     "appLogoIcon":"files\/extfile\/logo.png",
     "appLogoLinkURL":"http:\/\/sbicard.com",
