@@ -66,10 +66,32 @@ html{
 		(function(){
 			console.log('i ran');
 			var x = document.getElementById("audio-back");
-			console.log(x);
-			setTimeout(() => {
-				x.autoplay;
-			}, 1000);
+			var isTouched = false;
+			document.querySelector('body').addEventListener('touchend', function(){
+				console.log('touched')
+				if(isTouched == false){
+					console.log(x);
+					setTimeout(() => {
+						// x.autoplay = true;
+						x.play()
+					}, 1000);
+				}
+				isTouched = true;
+
+			})
+			document.querySelector('body').addEventListener('click', function(){
+				console.log('touched')
+				if(isTouched == false){
+					console.log(x);
+					setTimeout(() => {
+						// x.autoplay = true;
+						x.play()
+					}, 1000);
+				}
+				isTouched = true;
+
+			})
+
 		}())
 
 	</script>
