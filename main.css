@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    /* height: 100vh; */
+    
+}
+*{
+    box-sizing: border-box;
+}
+.ss-header{
+    background-color: #111111;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    color: #fff;
+    font-size: 16px;
+}
+.ss-header img{
+    height: 23px;
+    width: auto;
+}
+.ss-ghost-button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 9px 20px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 33px;
+    border-radius: 33.5px;
+}
+
+.ss-main{
+    display: flex;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}
+/* sidebar */
+.ss-sidebar{
+    width: 329px;
+    background-color: #171717;
+    height: 100%;
+    color: #fff;
+    position: relative;
+    transition: .4s;
+}
+
+.ss-sidebar .ss-menu-area{
+    padding: 40px 20px 0 20px;
+}
+.ss-sidebar .ss-menu-area p{
+    margin-bottom: 20px;
+    margin-top: 0;
+    height: 40px;
+    overflow: hidden;
+}
+.ss-sidebar-menu{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.ss-sidebar-menu-item{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    transition: padding .5s;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    width: 309px;
+    font-size: 16px;
+}
+.ss-sidebar-menu-item.active{
+    color: #00b1f2;
+}
+.ss-sidebar-menu-item:hover{
+    padding-right: 15px;
+}
+.ss-sidebar-menu-item svg:first-child{
+    pointer-events: none;
+    width: 33px;
+    height: auto;
+    transition: 0s;
+    transition-delay: .4s;
+}
+.ss-sidebar-menu-item svg:last-child{
+    pointer-events: none;
+    height: 12px;
+}
+.ss-sidebar-menu-item span{
+    padding-left: 15px;
+    margin-right: auto;
+    pointer-events: none;
+}
+
+.ss-card-area{
+    padding: 40px 20px;
+    border-bottom: 1px solid #323232;
+    max-height: 262px;
+}
+
+.ss-card-area img{
+    max-width: 220px;
+    margin-bottom: 20px;
+}
+.ss-card-area p{
+    margin: 0;
+    font-size: 16px;
+}
+.ss-collapse{
+    width: 39px;
+    height: 39px;
+    right: 30px;
+    bottom: 20px;
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+    transform-origin: center;
+}
+.ss-sidebar.collapsed .ss-collapse{
+    transform: rotate(180deg);
+    right: 25px;
+}
+.ss-sidebar.collapsed{
+    width: 80px;
+    transition: .2s;
+}
+.ss-sidebar.collapsed .ss-card-area{
+    transition: 0s;
+    transition-delay: 0s;
+    opacity: 0;
+}
+.ss-sidebar .ss-card-area{
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.3s;
+}
+.ss-sidebar .ss-menu-area p,
+.ss-sidebar .ss-sidebar-menu-item svg:last-child,
+.ss-sidebar .ss-sidebar-menu-item span{
+    /* display: none; */
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.3s;
+    
+}
+.ss-sidebar.collapsed .ss-menu-area p,
+.ss-sidebar.collapsed .ss-sidebar-menu-item svg:last-child,
+.ss-sidebar.collapsed .ss-sidebar-menu-item span{
+    /* display: none; */
+    transition: 0s;
+    transition-delay: 0s;
+    opacity: 0;
+}
+.ss-sidebar.collapsed .ss-sidebar-menu-item{
+    transition: none;
+}
+/* .ss-sidebar.collapsed .ss-sidebar-menu-item svg:first-child{
+    width: 33px;
+    height: auto;
+} */
+.ss-sidebar.collapsed .ss-sidebar .ss-menu-area{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.ss-sidebar.collapsed .ss-sidebar-menu-item{
+    padding-right: 10px;
+}
+/* sections */
+.ss-section-container{
+    width: calc(100% - 329px);
+    height: 100%;
+    background-color: #323232;
+}
+.ss-section-container.sidebar-collapsed{
+    width: calc(100% - 80px);
+}
+
+.ss-section-container .ss-section{
+    position: relative;
+    height: 100%;
+}
+.ss-section-container .ss-section iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ss-section{
+    display: none;
+}
+.ss-section.active{
+    display: block;
+}
