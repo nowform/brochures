@@ -239,6 +239,13 @@ body{
     .ss-sidebar.active{
         right: 0;
     }
+    .ss-sidebar-menu-item{
+        width: 100%;
+        padding-right: 0;
+    }
+    .ss-sidebar-menu-item svg:first-child{
+        height: 30px;
+    }
     .ss-section-container{
         width: 100%;
     }
