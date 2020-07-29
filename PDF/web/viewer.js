@@ -4547,7 +4547,7 @@ var defaultOptions = {
     kind: OptionKind.VIEWER + OptionKind.PREFERENCE
   },
   defaultUrl: {
-    value: "download.pdf",
+    value: "sample.pdf",
     kind: OptionKind.VIEWER
   },
   defaultZoomValue: {
@@ -4689,7 +4689,7 @@ var defaultOptions = {
     kind: OptionKind.WORKER
   },
   workerSrc: {
-    value: "../build/pdf.worker.js",
+    value: "./pdf/build/pdf.worker.js",
     kind: OptionKind.WORKER
   }
 };
