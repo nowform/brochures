@@ -30,6 +30,7 @@ body{
     color: #fff;
     border-radius: 33px;
     border-radius: 33.5px;
+    outline: none;
 }
 
 .ss-main{
@@ -201,4 +202,72 @@ body{
 }
 .ss-section.active{
     display: block;
+}
+.ss-sidebar-cross,#view-kit{
+    display: none;
+}
+@media only screen and (max-width: 767px){
+    .ss-header{
+        height: 100px;
+        flex-wrap: wrap;
+        padding-top:15px;
+    }
+    .ss-header span{
+        width: 100%;
+        order: 4;
+        text-align: center;
+        padding: 13px;
+    }
+    #view-kit{
+        display: inline-block;
+    }
+    .ss-sidebar{
+        position: fixed;
+        width: 100vw;
+        max-width: 329px;
+        right: -100%;
+        top: 0px;
+        z-index: 5;
+        padding-top: 40px;
+    }
+    .ss-sidebar.active{
+        right: 0;
+    }
+    .ss-section-container{
+        width: 100%;
+    }
+    .ss-sidebar-cross{
+        display: inline-flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .ss-collapse{
+        display: none;
+    }
+}
+@media only screen and (max-width: 575px){
+    
+    .ss-ghost-button{
+        padding: 4px 20px;
+        font-size: 12px;
+    }
+    .ss-header span{
+        width: 100%;
+        order: 4;
+        text-align: center;
+        padding: 20px;
+    }
+    #view-kit{
+        display: inline-block;
+    }
+    .ss-sidebar{
+        max-width: 100vw;
+    }
+    .ss-sidebar.active{
+        right: 0;
+    }
+    .ss-section-container{
+        width: 100%;
+    }
 }

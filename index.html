@@ -26,15 +26,20 @@
 		<span>
 			SimplySAVE SBI Card
 		</span>
-		<button class="ss-ghost-button">Register Now</button>
+		<button class="ss-ghost-button" style="margin-left:auto">Register Now</button>
+		<button class="ss-ghost-button " id="view-kit" style="margin-left:10px" onclick="toggleSidebar()">View Kit</button>
 	</header>
 	<main class="ss-main">
 		<aside class="ss-sidebar">
+			<a class="ss-sidebar-cross" onclick="toggleSidebar()">
+				<img src="./assets//arrow.svg" alt="" srcset="">
+			</a>
 			<div class="ss-card-area">
 				<img src="./assets/simply-save-card@2x.png" alt="">
 				<p>SimplySAVE SBI Card</p>
 			</div>
 			<div class="ss-menu-area">
+				
 				<p>Documents included in this kit:</p>
 				<ul class="ss-sidebar-menu">
 					<li class="ss-sidebar-menu-item active" data-target="ss-section-1">
@@ -121,7 +126,9 @@
 		function collapseSidebar(){
 			document.querySelector('.ss-sidebar').classList.toggle('collapsed')
 			document.querySelector('.ss-section-container').classList.toggle('sidebar-collapsed')
-			
+		}
+		function toggleSidebar(){
+			document.querySelector('.ss-sidebar').classList.toggle('active')
 		}
 	</script>
 </body>
