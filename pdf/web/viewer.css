@@ -2419,20 +2419,23 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 }
 
 @media all and (max-width: 770px) {
-  #outerContainer .hiddenLargeView {
+  /* #outerContainer .hiddenLargeView {
     display: none;
-  }
+  } */
   #outerContainer .visibleLargeView {
     display: inherit;
   }
 }
 
 @media all and (max-width: 700px) {
-  #outerContainer .hiddenMediumView {
+  /* #outerContainer .hiddenMediumView {
     display: none;
-  }
+  } */
   #outerContainer .visibleMediumView {
     display: inherit;
+  }
+  html[dir='ltr'] #toolbarViewerRight, html[dir='rtl'] #toolbarViewerLeft{
+    min-width: unset;
   }
 }
 
