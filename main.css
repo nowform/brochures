@@ -84,7 +84,7 @@ body{
 .ss-sidebar-menu-item svg:first-child{
     pointer-events: none;
     width: 33px;
-    height: auto;
+    height: 33px;
     transition: 0s;
     transition-delay: .4s;
 }
