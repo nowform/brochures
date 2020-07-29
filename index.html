@@ -121,6 +121,10 @@
 					})
 				}
 			});
+			console.log(document.querySelector('.ss-main'));
+			if(window.innerWidth < 768){
+				document.querySelector('.ss-main').style.height = (window.innerHeight - 100) + 'px';
+			}
 		}())
 
 		function collapseSidebar(){

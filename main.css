@@ -209,6 +209,7 @@ body{
 @media only screen and (max-width: 767px){
     .ss-main{
         height: calc(100vh - 100px);
+        
     }
     .ss-card-area{
         text-align: center;
