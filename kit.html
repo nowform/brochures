@@ -121,6 +121,19 @@
 						this.classList.add('active');
 					})
 				}
+				if(window.location.hash){
+					if(document.querySelector('.ss-section.active')){
+							document.querySelector('.ss-section.active').classList.remove('active');
+					}
+
+					if(document.querySelector('.ss-sidebar-menu-item.active')){
+						document.querySelector('.ss-sidebar-menu-item.active').classList.remove('active');
+					}
+					var splittext = window.location.hash.substr(1);
+					console.log(splittext);
+					document.querySelector('#ss-section-' + splittext).classList.add('active')
+					document.querySelector('.ss-sidebar-menu-item[data-target="ss-section-'+ splittext + '"]').classList.add('active');					
+				}	
 			});
 			console.log(document.querySelector('.ss-main'));
 			if(window.innerWidth < 768){

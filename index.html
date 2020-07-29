@@ -61,66 +61,66 @@
                         <h3 class="sbi-heading text-center mb-40">
                             SimplySAVE SBI Card
                         </h3>
-                        <button class="sbi-button sbi-button-large primary mb-20 has-icon" onclick="OpenBrochure()">
+                        <button class="sbi-button sbi-button-large primary mb-20" onclick="OpenBrochure('1')" >
                             Digital Brochure
                         </button>
-                        <a href="" class="sbi-link underlined mb-20">Card holder agreement</a>
-                        <a href="" class="sbi-link underlined">MITC</a>
+                        <a  class="sbi-link underlined mb-20" onclick="OpenBrochure('2')"  >Card holder agreement</a>
+                        <a  class="sbi-link underlined" onclick="OpenBrochure('3')">MITC</a>
                     </div>
                     <div class="col-md-4 ekit-card">
                         <img src="./assets/simply-click-card@2x.jpg" alt="" srcset="">
                         <h3 class="sbi-heading text-center mb-40">
                             SimplySAVE SBI Card
                         </h3>
-                        <button class="sbi-button sbi-button-large primary mb-20 has-icon">
+                        <button class="sbi-button sbi-button-large primary mb-20" onclick="OpenBrochure('1')">
                             Digital Brochure
                         </button>
-                        <a href="" class="sbi-link underlined mb-20">Card holder agreement</a>
-                        <a href="" class="sbi-link underlined">MITC</a>
+                        <a  class="sbi-link underlined mb-20" onclick="OpenBrochure('2')">Card holder agreement</a>
+                        <a  class="sbi-link underlined" onclick="OpenBrochure('3')">MITC</a>
                     </div>
                     <div class="col-md-4 ekit-card">
                         <img src="./assets/simply-save-card@2x.png" alt="" srcset="">
                         <h3 class="sbi-heading text-center mb-40">
                             SimplySAVE SBI Card
                         </h3>
-                        <button class="sbi-button sbi-button-large primary mb-20 has-icon">
+                        <button class="sbi-button sbi-button-large primary mb-20" onclick="OpenBrochure('1')">
                             Digital Brochure
                         </button>
-                        <a href="" class="sbi-link underlined mb-20">Card holder agreement</a>
-                        <a href="" class="sbi-link underlined">MITC</a>
+                        <a  class="sbi-link underlined mb-20" onclick="OpenBrochure('2')">Card holder agreement</a>
+                        <a  class="sbi-link underlined" onclick="OpenBrochure('3')">MITC</a>
                     </div>
                     <div class="col-md-4 ekit-card">
                         <img src="./assets/simply-save-card@2x.png" alt="" srcset="">
                         <h3 class="sbi-heading text-center mb-40">
                             SimplySAVE SBI Card
                         </h3>
-                        <button class="sbi-button sbi-button-large primary mb-20 has-icon">
+                        <button class="sbi-button sbi-button-large primary mb-20" onclick="OpenBrochure('1')">
                             Digital Brochure
                         </button>
-                        <a href="" class="sbi-link underlined mb-20">Card holder agreement</a>
-                        <a href="" class="sbi-link underlined">MITC</a>
+                        <a  class="sbi-link underlined mb-20" onclick="OpenBrochure('2')">Card holder agreement</a>
+                        <a  class="sbi-link underlined" onclick="OpenBrochure('3')">MITC</a>
                     </div>
                     <div class="col-md-4 ekit-card">
                         <img src="./assets/simply-click-card@2x.jpg" alt="" srcset="">
                         <h3 class="sbi-heading text-center mb-40">
                             SimplySAVE SBI Card
                         </h3>
-                        <button class="sbi-button sbi-button-large primary mb-20 has-icon">
+                        <button class="sbi-button sbi-button-large primary mb-20" onclick="OpenBrochure('1')">
                             Digital Brochure
                         </button>
-                        <a href="" class="sbi-link underlined mb-20">Card holder agreement</a>
-                        <a href="" class="sbi-link underlined">MITC</a>
+                        <a  class="sbi-link underlined mb-20" onclick="OpenBrochure('2')">Card holder agreement</a>
+                        <a  class="sbi-link underlined" onclick="OpenBrochure('3')">MITC</a>
                     </div>
                     <div class="col-md-4 ekit-card">
                         <img src="./assets/simply-save-card@2x.png" alt="" srcset="">
                         <h3 class="sbi-heading text-center mb-40">
                             SimplySAVE SBI Card
                         </h3>
-                        <button class="sbi-button sbi-button-large primary mb-20 has-icon">
+                        <button class="sbi-button sbi-button-large primary mb-20" onclick="OpenBrochure('1')">
                             Digital Brochure
                         </button>
-                        <a href="" class="sbi-link underlined mb-20">Card holder agreement</a>
-                        <a href="" class="sbi-link underlined">MITC</a>
+                        <a  class="sbi-link underlined mb-20" onclick="OpenBrochure('2')">Card holder agreement</a>
+                        <a  class="sbi-link underlined" onclick="OpenBrochure('3')">MITC</a>
                     </div>
                 </div>
             </div>
@@ -130,9 +130,9 @@
     <img src="./assets/footer-mobile.jpg" style="width: 100%;" alt="" srcset=""  class="sm-visible">      
 	
 	<script>
-        function OpenBrochure(){
+        function OpenBrochure(value){
             // window.location.href = './kit.html';
-            window.open('./kit.html', '_blank');
+            window.open('./kit.html#' + value , '_blank');
         }
     </script>
 </body>

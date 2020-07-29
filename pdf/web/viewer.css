@@ -637,11 +637,12 @@ html[dir='rtl'] #sidebarContent {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   position: absolute;
-  top: 32px;
+  top: 0px;
   right: 0;
   bottom: 0;
   left: 0;
   outline: none;
+  padding-top: 30px;
 }
 #viewerContainer:not(.pdfPresentationMode) {
   -webkit-transition-duration: 200ms;
@@ -2144,7 +2145,7 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
   }
 
   html[dir='ltr'] .toolbarButton#sidebarToggle::before {
-    content: url(images/toolbarButton-sidebarToggle@2x.png);
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAWklEQVRIS2NkoBFgpJG5DPQx+N27d/9x+UBISAjsCGLUgNShuBikCWYAsgXI4sSoGTUYJRjpF8Y0SRXUzCyjGQQeAvRLFaNZGpyEiSkSiVGDUboNvQxCTRcDAPgswBcHvYx+AAAAAElFTkSuQmCC');
   }
   html[dir='rtl'] .toolbarButton#sidebarToggle::before {
     content: url(images/toolbarButton-sidebarToggle-rtl@2x.png);
@@ -2172,14 +2173,14 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
   }
 
   html[dir='ltr'] .toolbarButton.pageUp::before {
-    content: url(images/toolbarButton-pageUp@2x.png);
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAc0lEQVRIS93TwQ3AMAgDwGQF9p+RFVrxqJRHGmwjHm3e6OQIM0fTm03u+Dns7peZQb+EhmIPDBrzEMyiEKygKayiR7iCvsJVdAsHql7jWsVtK1oSP2mr+LHHFTw9EBVPYeWc0wNZ28EmhxIrC6Vgpt/fg2/xojwXf344iAAAAABJRU5ErkJggg==');
   }
   html[dir='rtl'] .toolbarButton.pageUp::before {
     content: url(images/toolbarButton-pageUp-rtl@2x.png);
   }
 
   html[dir='ltr'] .toolbarButton.pageDown::before {
-    content: url(images/toolbarButton-pageDown@2x.png);
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAc0lEQVRIS93TwQ0AIQgEQG2B/mukhbvwM7kou0vwcb7NiLDM0XRmkzt+Drv7Y2bQL6FL6xxQnIbjEQSXYASX4QwvwSe8DO/wDxyDUbdxjeK9itlqd9ErVXzKswxnSyLBGRrtpGEEpWEUpWEmMXQrULwNfgGxVzwXjD263gAAAABJRU5ErkJggg==');
   }
   html[dir='rtl'] .toolbarButton.pageDown::before {
     content: url(images/toolbarButton-pageDown-rtl@2x.png);
@@ -2210,7 +2211,7 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 
   .toolbarButton.download::before,
   .secondaryToolbarButton.download::before {
-    content: url(images/toolbarButton-download@2x.png);
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAe0lEQVRIS2NkoBFgpJG5DIPD4Hfv3v0XEhIiyjFEKYIF16jB8IQzgoMC3euE+MiZjWByQzYMnS0oKMjCyMj4F1vuJWgwSBPMQHQaX3FAlMEww2EGEZP7iDYY2eXEFFwYBpOSVpEtQNc3TAwmJgyxqUGOVJIijxQLh57BAOZZZRfwayXRAAAAAElFTkSuQmCC');
   }
 
   .toolbarButton.bookmark::before,
