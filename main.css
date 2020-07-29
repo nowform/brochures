@@ -210,6 +210,9 @@ body{
     .ss-main{
         height: calc(100vh - 100px);
     }
+    .ss-card-area{
+        text-align: center;
+    }
     .ss-header{
         height: 100px;
         flex-wrap: wrap;
