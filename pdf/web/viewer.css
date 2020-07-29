@@ -992,6 +992,7 @@ html[dir='rtl'] #toolbarViewerRight {
 html[dir='ltr'] #toolbarViewerRight,
 html[dir='rtl'] #toolbarViewerLeft {
   float: right;
+  min-width: 100px;
   padding-right: 10px;
 }
 html[dir='ltr'] #toolbarViewerLeft > *,
@@ -1342,10 +1343,14 @@ html[dir='rtl'] .toolbarButton.pageDown::before {
 
 .toolbarButton.zoomOut::before {
   content: url(images/toolbarButton-zoomOut.png);
+  transform: scale(.5);
+  top: -4px;
 }
 
 .toolbarButton.zoomIn::before {
   content: url(images/toolbarButton-zoomIn.png);
+  transform: scale(.5);
+  top: -4px;
 }
 
 .toolbarButton.presentationMode::before,
@@ -2102,9 +2107,9 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 @media screen and (-webkit-min-device-pixel-ratio: 1.1), screen and (min-resolution: 1.1dppx) {
   /* Rules for Retina screens */
   .toolbarButton::before {
-    -webkit-transform: scale(0.5);
+    /* -webkit-transform: scale(0.5);
             transform: scale(0.5);
-    top: -5px;
+    top: -5px; */
   }
 
   .secondaryToolbarButton::before {
@@ -2456,11 +2461,13 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
 }
 
 /* custom */
+
+#scaleSelectContainer,
 #viewFind,
 #secondaryToolbarToggle,
 #print,
 #openFile,
 #viewBookmark,
 .verticalToolbarSeparator{
-  display: none;
+  display: none !important;
 }

@@ -181,13 +181,14 @@ body{
     width: calc(100% - 329px);
     height: 100%;
     background-color: #323232;
+    position: relative;
 }
 .ss-section-container.sidebar-collapsed{
     width: calc(100% - 80px);
 }
 
 .ss-section-container .ss-section{
-    position: relative;
+    /* position: relative; */
     height: 100%;
 }
 .ss-section-container .ss-section iframe{
@@ -198,10 +199,15 @@ body{
     left: 0;
 }
 .ss-section{
-    display: none;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 }
 .ss-section.active{
-    display: block;
+    z-index: 1;
 }
 .ss-sidebar-cross,#view-kit{
     display: none;
