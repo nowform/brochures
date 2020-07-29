@@ -246,6 +246,9 @@ body{
     .ss-sidebar-menu-item svg:first-child{
         height: 30px;
     }
+    .ss-sidebar .ss-menu-area p{
+        text-align: center;
+    }
     .ss-section-container{
         width: 100%;
     }
