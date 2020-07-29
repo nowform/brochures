@@ -206,6 +206,9 @@ body{
 .ss-sidebar-cross,#view-kit{
     display: none;
 }
+#view-kit{
+    margin-left: 10px;
+}
 @media only screen and (max-width: 767px){
     body{
         min-height: auto;
@@ -228,6 +231,9 @@ body{
         order: 4;
         text-align: center;
         padding: 13px;
+    }
+    #register-button{
+        margin-left: auto;
     }
     #view-kit{
         display: inline-block;
@@ -292,13 +298,34 @@ body{
         width: 100%;
     }
 }
-
-
+@media only screen and (max-width: 380px){
+    .ss-header img{
+        height: 18px;
+    }
+    #view-kit{
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width: 336px){
+    .ss-header{
+        padding-top: 10px;
+    }
+    .ss-header span{
+        padding: 5px 20px;
+    }
+    #view-kit{
+        margin-left: auto;
+        margin-top: 5px;
+    }
+}
 /* landing css */
 .ekit-banner{
     height: 450px;   
     overflow: hidden;
     position: relative;
+}
+.ekit-banner .sbi-heading{
+    font-size: 20px;
 }
 .ekit-banner img{
     width: 100%;
@@ -311,7 +338,10 @@ body{
 .ekit-banner *{
     color: #fff;
 }
-.ekit-section{
+.ekit-first-section{
+    padding: 60px 0;
+}
+.ekit-second-section{
     padding: 60px 0;
 }
 .ekit-card{
@@ -329,6 +359,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
+    position: relative;
 }
 .ekit-card .sbi-button{
     width: 280px;
@@ -336,9 +367,32 @@ body{
     min-width: unset;
 }
 @media only screen and (max-width: 767px){
+    .ekit-card{
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    .ekit-card:not(:last-child)::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        width: 100vw;
+        background-color: #f2f2fd;
+        height: 1px;
+    }
+    .ekit-landing-main .divider{
+        display: none;
+    }
     .ekit-banner.flex-ac{
         min-height: 628px;
         align-items: flex-end;text-align: center;
+        padding-bottom: 40px;
+    }
+    .ekit-first-section{
+        padding: 80px 0 40px 0;
+    }
+    .ekit-second-section{
+        padding: 40px 0;
     }
 }
 @media only screen and (max-width: 575px){

@@ -11,13 +11,13 @@
 <body>
 	<img src="./assets/header.jpg" class="sm-hidden" style="width: 100%;" alt="" srcset="">
     <img src="./assets/header-mobile.jpg" class="sm-visible" style="width: 100%;" alt="" srcset="">
-    <main>
+    <main class="ekit-landing-main">
         <div class="ekit-banner flex flex-ac">
             <img src="./assets/banner.jpg" class="sm-hidden" alt="" srcset="">
             <img src="./assets/banner-mobile.jpg" class="sm-visible" alt="" srcset="">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 offset-7">
+                    <div class="col-md-6 offset-6 col-lg-4 offset-lg-7">
                         <h1 class="sbi-heading white mb-20">Welcome to the world of benefits</h1>
                         <p class="sbi-text white mb-40">Explore and become a member by appyling for a Credit Card and enjoy all the benefits offered by SBI Card.</p>
                         <button class="sbi-button primary sbi-button-large">Apply Now</button>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="ekit-section ">
+        <div class="ekit-first-section ">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="ekit-section ">
+        <div class="ekit-second-section ">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -131,7 +131,8 @@
 	
 	<script>
         function OpenBrochure(){
-            window.location.href = './kit.html';
+            // window.location.href = './kit.html';
+            window.open('./kit.html', '_blank');
         }
     </script>
 </body>
