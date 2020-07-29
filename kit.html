@@ -107,6 +107,7 @@
 				var allMenus = document.querySelectorAll('.ss-sidebar-menu-item')
 				for(var i = 0 ; i< allMenus.length;i++){
 					allMenus[i].addEventListener('click',function(event){
+						document.querySelector('.ss-sidebar').classList.remove('active');
 						console.log(event.target.dataset.target);
 						if(document.querySelector('.ss-section.active')){
 							document.querySelector('.ss-section.active').classList.remove('active');

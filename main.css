@@ -337,7 +337,7 @@ body{
 }
 @media only screen and (max-width: 767px){
     .ekit-banner.flex-ac{
-        height: 628px;
+        min-height: 628px;
         align-items: flex-end;text-align: center;
     }
 }
