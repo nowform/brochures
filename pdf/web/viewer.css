@@ -994,6 +994,10 @@ html[dir='rtl'] #toolbarViewerLeft {
   float: right;
   min-width: 100px;
   padding-right: 10px;
+  text-align: right;
+}
+html[dir='ltr'] #toolbarViewerRight button{
+  float: right;
 }
 html[dir='ltr'] #toolbarViewerLeft > *,
 html[dir='ltr'] #toolbarViewerMiddle > *,
