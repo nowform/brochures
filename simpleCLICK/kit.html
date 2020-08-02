@@ -116,7 +116,7 @@
 	</main>
 	<script>
 		(function () {
-			window.addEventListener('DOMContentLoaded', (event) => {
+			window.addEventListener('DOMContentLoaded', function (event) {
 				console.log('DOM fully loaded and parsed');
 				var allMenus = document.querySelectorAll('.ss-sidebar-menu-item')
 				for (var i = 0; i < allMenus.length; i++) {
