@@ -107,7 +107,7 @@
         }
         (function () {
             // This script centers the cards when they are less than 3 in count
-            window.addEventListener('DOMContentLoaded', (event) => {
+            window.addEventListener('DOMContentLoaded', function (event) {
                 var totalCards = document.querySelectorAll('#cards-row-custom .ekit-card')
                 if (totalCards.length < 3) {
                     document.querySelector('#cards-row-custom').classList.add('flex-jc')
