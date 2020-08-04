@@ -358,16 +358,18 @@ body{
     .ss-section-container{
         width: 100%;
     }
-}
-@media only screen and (max-width: 380px){
+    #view-kit{
+        margin-left: 0;
+    }
     .ss-header img{
         height: 18px;
     }
+}
+@media only screen and (max-width: 354px){
+    
     #view-kit{
         margin-left: auto;
     }
-}
-@media only screen and (max-width: 336px){
     .ss-header{
         padding-top: 10px;
     }
@@ -383,5 +385,10 @@ body{
         order:2;
         margin-left: auto;
        
+    }
+    #register-button{
+        margin-left: calc(100vw - 152px);
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
