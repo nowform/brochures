@@ -25,17 +25,23 @@
 
 <body>
 	<header class="ss-header">
-		<img src="./assets/logo.png" alt="">
+		<img src="../assets/logo.png" alt="">
 		<span>
-			SimplyCLICK SBI Card
+			SimplySAVE SBI Card
 		</span>
-		<button class="ss-ghost-button" id="register-button">Register Now</button>
-		<button class="ss-ghost-button " id="view-kit" onclick="toggleSidebar()">View Kit</button>
+		<button class="ss-link-button" id="register-button">Register Now</button>
+		<button class="ss-ghost-button " id="view-kit" onclick="toggleSidebar()">View Kit
+			<svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 12">
+				<path fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
+					stroke-linejoin="round" stroke-width="2" d="M282.5 494L288.5 498.811 282.5 504"
+					transform="matrix(1 0 0 -1 -281 505)" />
+			</svg>
+		</button>
 	</header>
 	<main class="ss-main">
 		<aside class="ss-sidebar">
 			<a class="ss-sidebar-cross" onclick="toggleSidebar()">
-				<img src="./assets/cross.svg" alt="" srcset="">
+				<img src="../assets/cross.svg" alt="" srcset="">
 			</a>
 			<div class="ss-card-area">
 				<img src="./simply-click-card@2x.png" alt="">
@@ -107,10 +113,10 @@
 				<iframe src="./brochure/brochure.html" frameborder="0"></iframe>
 			</div>
 			<div class="ss-section" id="ss-section-2">
-				<iframe src="./viewer.html" frameborder="0"></iframe>
+				<iframe src="./pdf-2/viewer.html" frameborder="0"></iframe>
 			</div>
 			<div class="ss-section" id="ss-section-3">
-				<iframe src="./viewer.html" frameborder="0"></iframe>
+				<iframe src="./pdf/viewer.html" frameborder="0"></iframe>
 			</div>
 		</section>
 	</main>

@@ -32,6 +32,16 @@ body{
     border-radius: 33.5px;
     outline: none;
 }
+.ss-link-button{
+    background-color: transparent;
+    /* padding: 9px 20px; */
+    padding: 9px 10px;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+    text-decoration: underline;
+    border:none;
+}
 
 .ss-main{
     display: flex;
@@ -215,11 +225,49 @@ body{
 #view-kit{
     margin-left: 10px;
 }
-#view-kit span.arrow{
+#view-kit .arrow{
     color: #fff;
     height: 10px;
     margin-left: 5px;
 }
+/* hamburger */
+/* .ss-ham-cross{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    cursor: pointer;
+}
+
+.ss-ham-cross::after,
+.ss-ham-cross::before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    transition: .3s;
+}
+
+
+.ss-ham-cross.active{
+    border: none;
+}
+.ss-ham-cross.active::before{
+    transform: rotate(45deg) scale(1.4);
+    transform-origin: center;
+}
+.ss-ham-cross.active::after{
+    transform: rotate(-45deg) scale(1.4);
+    transform-origin: center;
+} */
 
 @media only screen and (max-width: 767px){
     body{
@@ -238,7 +286,7 @@ body{
         flex-wrap: wrap;
         padding-top:15px;
     }
-    .ss-header > span{
+    .ss-header span{
         width: 100%;
         order: 4;
         text-align: center;
@@ -287,6 +335,7 @@ body{
 }
 @media only screen and (max-width: 575px){
     
+    .ss-link-button,
     .ss-ghost-button{
         padding: 4px 20px;
         font-size: 12px;
@@ -325,8 +374,14 @@ body{
     .ss-header span{
         padding: 5px 20px;
     }
-    #view-kit{
-        margin-left: auto;
+    #register-button{
+        order:3;
         margin-top: 5px;
+        padding-right: 14px;
+    }
+    #view-kit{
+        order:2;
+        margin-left: auto;
+       
     }
 }

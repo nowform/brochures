@@ -32,6 +32,16 @@ body{
     border-radius: 33.5px;
     outline: none;
 }
+.ss-link-button{
+    background-color: transparent;
+    /* padding: 9px 20px; */
+    padding: 9px 10px;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+    text-decoration: underline;
+    border:none;
+}
 
 .ss-main{
     display: flex;
@@ -215,6 +225,11 @@ body{
 #view-kit{
     margin-left: 10px;
 }
+#view-kit .arrow{
+    color: #fff;
+    height: 10px;
+    margin-left: 5px;
+}
 /* hamburger */
 /* .ss-ham-cross{
     position: relative;
@@ -320,6 +335,7 @@ body{
 }
 @media only screen and (max-width: 575px){
     
+    .ss-link-button,
     .ss-ghost-button{
         padding: 4px 20px;
         font-size: 12px;
@@ -358,8 +374,14 @@ body{
     .ss-header span{
         padding: 5px 20px;
     }
-    #view-kit{
-        margin-left: auto;
+    #register-button{
+        order:3;
         margin-top: 5px;
+        padding-right: 14px;
+    }
+    #view-kit{
+        order:2;
+        margin-left: auto;
+       
     }
 }
