@@ -44,7 +44,7 @@ body{
     max-width: 280px;
     margin: auto;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .ekit-card{
     display: inline-flex;
@@ -54,15 +54,19 @@ body{
     position: relative;
 }
 .ekit-card .sbi-button{
-    width: 280px;
-    max-width: 100%;
-    min-width: unset;
+    /* width: 280px; */
+    /* max-width: 100%; */
+    /* min-width: unset; */
 }
 .ekit-landing-main .divider{
     margin: 0;
+    background-color: #d5d5e8;
 }
 
 @media only screen and (max-width: 767px){
+    .ekit-banner-heading{
+        margin-bottom: 20px;
+    }
     .ekit-card{
         padding-bottom: 20px;
         margin-bottom: 40px;
@@ -84,10 +88,10 @@ body{
         align-items: flex-end;text-align: center;
         padding-bottom: 40px;
     }
-
+/* 
     .ekit-first-section{
         padding-top: 60px;
-    }
+    } */
     .ekit-second-section{
         padding-top: 20px;
     }

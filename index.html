@@ -14,7 +14,7 @@
     <img src="./assets/header.jpg" class="sm-hidden" style="width: 100%;" alt="" srcset="">
     <img src="./assets/header-mobile.jpg" class="sm-visible" style="width: 100%;" alt="" srcset="">
     <main class="ekit-landing-main">
-        <div class="ekit-banner flex flex-ac">
+        <!-- <div class="ekit-banner flex flex-ac">
             <img src="./assets/banner.jpg" class="sm-hidden" alt="" srcset="">
             <img src="./assets/banner-mobile.jpg" class="sm-visible" alt="" srcset="">
             <div class="container">
@@ -27,18 +27,18 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="ekit-first-section ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 offset-1">
-                        <h2 class="sbi-heading mb-40 text-center">Digitised membership kits for you</h2>
+                        <h2 class="sbi-heading mb-40 text-center ekit-banner-heading">Digitised membership kits for you
+                        </h2>
                         <p class="sbi-text mb-none text-center">
                             SBI Credit Cards are designed to deliver superior value and are powered by unique benefits
                             and programs crafted to suit premium lifestyles.
 
-                            <br>
-                            <br>
+                            <span style="margin-bottom: 10px; display: block;"></span>
                             We have now digitised our Membership Kits as part of the GoGreen initiative, an endeavour to
                             reduce use of paper and make our contribution to this noble cause. The Membership Kit
                             includes the digital brochure, Card Holder agreement and Most Important Terms & Conditions
@@ -59,27 +59,30 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2 class="sbi-heading mb-40 text-center">SBI Card Membership Kits</h2>
+                        <h2 class="sbi-heading mb-40 text-center ">SBI Card Membership Kits</h2>
                     </div>
                 </div>
                 <div class="row flex" id="cards-row-custom">
                     <div class="col-md-4 ekit-card">
                         <img src="./assets/simply-save-card@2x.png" alt="" srcset="">
-                        <h3 class="sbi-heading text-center mb-40">
+                        <h3 class="sbi-heading text-center mb-20">
                             SimplySAVE SBI Card
                         </h3>
-                        <button class="sbi-button sbi-button-large primary mb-20" onclick="OpenTargetKit('1')">
-                            E-kit for SimplySave
+                        <button class="sbi-button primary mb-20" onclick="OpenTargetKit('1')">
+                            Digital Brochure
                         </button>
+                        <a href="" class="sbi-link underlined">T&C and MITC documents</a>
                     </div>
                     <div class="col-md-4 ekit-card">
                         <img src="./assets/simply-click-card@2x.jpg" alt="" srcset="">
-                        <h3 class="sbi-heading text-center mb-40">
+                        <h3 class="sbi-heading text-center mb-20">
                             SimplyCLICK SBI Card
                         </h3>
-                        <button class="sbi-button sbi-button-large primary mb-20" onclick="OpenTargetKit('2')">
-                            E-kit for SimplyClick
+                        <button class="sbi-button primary mb-20" onclick="OpenTargetKit('2')">
+                            Digital Brochure
                         </button>
+                        <a href="" class="sbi-link underlined">T&C and MITC documents</a>
+
                     </div>
 
                 </div>
@@ -94,10 +97,10 @@
             // window.location.href = './kit.html';
             switch (parseInt(value)) {
                 case 1:
-                    window.open('./simplySAVE/kit.html');
+                    window.open('./simplySAVE/brochure/brochure.html');
                     break;
                 case 2:
-                    window.open('./simplyCLICK/kit.html');
+                    window.open('./simplyCLICK/brochure/brochure.html');
                     break;
 
                 default:
