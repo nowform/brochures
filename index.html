@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://jatinkukreja18.github.io/SBI-Theme/main.css">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./sbi-theme.css">
+    <link rel="stylesheet" href="./ekit.css">
 </head>
 
 <body>
@@ -70,7 +70,8 @@
                         <button class="sbi-button primary mb-20" onclick="OpenTargetKit('1')">
                             Digital Brochure
                         </button>
-                        <a href="" class="sbi-link underlined">T&C and MITC documents</a>
+                        <a href="https://www.sbicard.com/sbi-card-en/assets/docs/pdf/simplysave-know-your-card-MITC-80920.pdf"
+                            target="_blank" class="sbi-link underlined">T&C and MITC documents</a>
                     </div>
                     <div class="col-md-4 ekit-card">
                         <img src="./assets/simply-click-card@2x.jpg" alt="" srcset="">
@@ -80,7 +81,8 @@
                         <button class="sbi-button primary mb-20" onclick="OpenTargetKit('2')">
                             Digital Brochure
                         </button>
-                        <a href="" class="sbi-link underlined">T&C and MITC documents</a>
+                        <a href="https://www.sbicard.com/sbi-card-en/assets/docs/pdf/simply-click-tnc-MITC-booklet.pdf"
+                            target="_blank" class="sbi-link underlined">T&C and MITC documents</a>
 
                     </div>
 
@@ -96,10 +98,10 @@
             // window.location.href = './kit.html';
             switch (parseInt(value)) {
                 case 1:
-                    window.open('./simplySAVE/brochure/brochure.html');
+                    window.open('https://static.sbicard.com/brochures-master/simplySAVE/brochure/brochure.html');
                     break;
                 case 2:
-                    window.open('./simplyCLICK/brochure/brochure.html');
+                    window.open('https://static.sbicard.com/brochures-master/simplyCLICK/brochure/brochure.html#p=1');
                     break;
 
                 default:
