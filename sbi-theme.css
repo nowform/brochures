@@ -500,7 +500,7 @@
   a:hover,
   .sbi-link {
     cursor: pointer;
-    font: 400 14px "Open Sans", sans-serif;
+    /* font-family: 400 14px "Open Sans", sans-serif; */
     color: #00b1f2;
   }
   
