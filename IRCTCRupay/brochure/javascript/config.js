@@ -6,7 +6,7 @@ var bookConfig = {
    "appLogoLinkURL": "http:\/\/sbicard.com",
    "HomeURL": "",
    "appLogoOpenWindow": "Blank",
-   "bookTitle": "IRCTC Rupay - SBI Card",
+   "bookTitle": "IRCTC SBI Card (on RuPay platform)",
    "bookDescription": "",
    "toolbarColor": "#181818",
    "iconColor": "#eeeeee",

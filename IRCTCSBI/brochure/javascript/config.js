@@ -6,7 +6,7 @@ var bookConfig = {
    "appLogoLinkURL": "http:\/\/sbicard.com",
    "HomeURL": "",
    "appLogoOpenWindow": "Blank",
-   "bookTitle": "IRCTC - SBI Card",
+   "bookTitle": "IRCTC SBI Platinum Card - SBI Card",
    "bookDescription": "",
    "toolbarColor": "#181818",
    "iconColor": "#eeeeee",

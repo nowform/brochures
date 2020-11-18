@@ -6,7 +6,7 @@ var bookConfig = {
    "appLogoLinkURL": "http:\/\/sbicard.com",
    "HomeURL": "",
    "appLogoOpenWindow": "Blank",
-   "bookTitle": "CBI - SBI Card",
+   "bookTitle": "CBI SimplySave SBI Card",
    "bookDescription": "",
    "toolbarColor": "#181818",
    "iconColor": "#eeeeee",
