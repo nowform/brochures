@@ -5,7 +5,9 @@ body{
     /* height: 100vh; */
     /* max-width: 100vw; */
 }
-
+.sbi-link.sbi-link-10{
+    font-size: 10px;
+}
 /* landing css */
 .ekit-banner{
     height: 380px;   
