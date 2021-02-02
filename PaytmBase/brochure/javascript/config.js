@@ -6,7 +6,7 @@ var bookConfig = {
    "appLogoLinkURL": "http:\/\/sbicard.com",
    "HomeURL": "",
    "appLogoOpenWindow": "Blank",
-   "bookTitle": "Paytm Base Brochure",
+   "bookTitle": "Paytm SBI Card - Web Brochure",
    "bookDescription": "",
    "toolbarColor": "#181818",
    "iconColor": "#eeeeee",
