@@ -85,7 +85,7 @@ var bookConfig = {
    "AboutDescription": "",
    "totalPageCount": 9,
    "largePageWidth": 504,
-   "largePageHeight": 576,
+   "largePageHeight": 612,
    "normalPath": "files\/large\/",
    "largePath": "files\/large\/",
    "thumbPath": "files\/thumb\/",
