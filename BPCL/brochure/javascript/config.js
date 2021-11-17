@@ -6,7 +6,7 @@ var bookConfig = {
    "appLogoLinkURL": "http:\/\/sbicard.com",
    "HomeURL": "",
    "appLogoOpenWindow": "Blank",
-   "bookTitle": "Simple Save - SBI Card",
+   "bookTitle": "BPCL Rupay - SBI Card",
    "bookDescription": "",
    "toolbarColor": "#181818",
    "iconColor": "#eeeeee",
