@@ -46,7 +46,8 @@
                             <span style="margin-bottom: 10px; display: block;"></span>
                             The most important terms and conditions common to all cards can be accessed here.
                             <span style="margin-bottom: 10px; display: block;"></span>
-                            <button class="sbi-button primary mb-20" onclick="window.open('https://sbicard.com', '_blank').focus();">
+                            <button class="sbi-button primary mb-20"
+                                onclick="window.open('./assets/MITC-Revised-5th Oct 2021.pdf', '_blank').focus();">
                                 View MITC Document
                             </button>
                         </p>
@@ -140,7 +141,7 @@
                             target="_blank" class="sbi-link-10 sbi-link underlined">Terms & Conditions</a>
 
                     </div>
-                    
+
                     <div class="col-md-4 ekit-card">
                         <img src="./assets/SimplySavePro.png" alt="" srcset="">
                         <h3 class="sbi-heading text-center mb-20">
@@ -249,7 +250,7 @@
                             target="_blank" class="sbi-link-10 sbi-link underlined">Terms & Conditions</a>
 
                     </div>
-                    
+
                     <div class="col-md-4 ekit-card">
                         <img src="./assets/Unnati Card Face.png" alt="" srcset="">
                         <h3 class="sbi-heading text-center mb-20">
@@ -299,6 +300,45 @@
                         </button>
                         <a href="https://www.sbicard.com/sbi-card-en/assets/docs/pdf/simply-click-tnc-MITC-booklet.pdf"
                             target="_blank" class="sbi-link-10 sbi-link underlined">Terms & Conditions</a>
+
+                    </div>
+
+                    <div class="col-md-4 ekit-card">
+                        <img src="./assets/bpcl-octane-cardface.jpg" alt="" srcset="">
+                        <h3 class="sbi-heading text-center mb-20">
+                            BPCL SBI Card OCTANE
+                        </h3>
+                        <button class="sbi-button primary mb-20" onclick="OpenTargetKit('22')">
+                            Digital Brochure
+                        </button>
+                        <a href="./BPCLOctane/t&c/BPCLOctaneT&C.pdf" target="_blank"
+                            class="sbi-link-10 sbi-link underlined">Terms & Conditions</a>
+
+                    </div>
+
+                    <div class="col-md-4 ekit-card">
+                        <img src="./assets/irctc-premier-cardface.jpg" alt="" srcset="">
+                        <h3 class="sbi-heading text-center mb-20">
+                            IRCTC SBI Card Premier
+                        </h3>
+                        <button class="sbi-button primary mb-20" onclick="OpenTargetKit('23')">
+                            Digital Brochure
+                        </button>
+                        <a href="./IRCTCPremier/t&c/IRCTCPremierT&C.pdf" target="_blank"
+                            class="sbi-link-10 sbi-link underlined">Terms & Conditions</a>
+
+                    </div>
+
+                    <div class="col-md-4 ekit-card">
+                        <img src="./assets/air-india-platinum-cardface.jpg" alt="" srcset="">
+                        <h3 class="sbi-heading text-center mb-20">
+                            Air India SBI Platinum Card
+                        </h3>
+                        <button class="sbi-button primary mb-20" onclick="OpenTargetKit('24')">
+                            Digital Brochure
+                        </button>
+                        <a href="./AirIndia/t&c/Air India_T&C.pdf" target="_blank"
+                            class="sbi-link-10 sbi-link underlined">Terms & Conditions</a>
 
                     </div>
                     <!-- uncomment card as per your convenience -->
@@ -398,7 +438,16 @@
                     window.open('https://static.sbicard.com/brochures-master/Fabindia/brochure/brochure.html');
                     break;
                 case 21:
-                    window.open('https://static.sbicard.com/brochures-master/Apollo/brochure/brochure.html');
+                    window.open('./Apollo/brochure/brochure.html');
+                    break;
+                case 22:
+                    window.open('./BPCLOctane/brochure/brochure.html');
+                    break;
+                case 23:
+                    window.open('./IRCTCPremier/brochure/brochure.html');
+                    break;
+                case 24:
+                    window.open('./AirIndia/brochure/brochure.html');
                     break;
                 default:
                     break;
